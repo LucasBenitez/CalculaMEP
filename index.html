@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <title>Calcula Tu MEP</title>
+</head>
+
+<body class="">
+    <div class="container ">
+        <div class="row ">
+            <div class="input-group mt-3 text-center justify-content-center col-md-6">
+                <input type="text" class="form-control-lg" placeholder="Ingrese monto a invertir" id="monto"/>
+                <button class="btn btn-outline-primary" type="button" onclick="mostrarResultados()">Calcular</button>
+
+            </div>
+            <div class="card t  ext-center" id="resultados">
+                <div class="card-header">
+                    <ul class="nav nav-tabs mb-3" id="ex1" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active" id="ex1-tab-1" data-mdb-toggle="tab" href="#AL30"
+                                role="tab" aria-controls="ex1-tabs-1" aria-selected="true">
+                                AL30</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="ex1-tab-2" data-mdb-toggle="tab" href="#AL30D" role="tab"
+                                aria-controls="ex1-tabs-2" aria-selected="false">AL30D</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="ex1-tab-3" data-mdb-toggle="tab" href="#Resumen" role="tab"
+                                aria-controls="ex1-tabs-3" aria-selected="false">Resumen</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="ex1-content">
+                        <div class="tab-pane fade show active" id="AL30" role="tabpanel"
+                            aria-labelledby="ex1-tab-1">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            Cotización bono AL30:
+                                        </th>
+                                        <th>
+                                            Cantidad a comprar:
+                                        </th>
+                                        <th>
+                                            Costo por esa cantidad:
+                                        </th>
+                                        <th>
+                                            Comisión(0,5%):
+                                        </th>
+                                        <th>
+                                            Impuestos (0,01%):
+                                        </th>
+                                        <th>
+                                            Total a invertir:
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <th id="cotAL30">1</th>
+                                    <td id="cantAL30">Mark</td>
+                                    <td id="costoAL30">Otto</td>
+                                    <td id="comAL30">@mdo</td>
+                                    <td id="impAL30">@mdo</td>
+                                    <td id="montoTotal">@mdo</td>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="tab-pane fade" id="AL30D" role="tabpanel" aria-labelledby="ex1-tab-2">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            Cotización bono AL30D:
+                                        </th>
+                                        <th>
+                                            x 1 papel:
+                                        </th>
+                                        <th>
+                                            Adhiero por la venta:
+                                        </th>
+                                        <th>
+                                            Comisión(0,5%):
+                                        </th>
+                                        <th>
+                                            Impuestos (0,01%):
+                                        </th>
+                                        <th>
+                                            Monto Total USD:
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <th id="cotAL30D">1</th>
+                                    <td id="AL30D/100">Mark</td>
+                                    <td id="ventaAL30D">Otto</td>
+                                    <td id="comAL30D">@mdo</td>
+                                    <td id="impAL30D">@mdo</td>
+                                    <td id="montoTotalUSD">@mdo</td>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="tab-pane fade" id="Resumen" role="tabpanel" aria-labelledby="ex1-tab-3">
+                            <div class="card-body">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                Dólar MEP obtenido:
+                                            </th>
+                                            <th>
+                                                ARS adquiridos:
+                                            </th>
+                                            <th>
+                                                Ganancia:
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <th id="MEP">1</th>
+                                        <td id="ARS">Mark</td>
+                                        <td id="ganancia">Otto</td>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+</body>
+<script src="js/mdb.min.js"></script>
+<script src="js/index.js"></script>
+
+</html>
